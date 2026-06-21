@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.resume-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.resume-header {
+    padding: 20px;
+    border-bottom: 2px solid #333;
+}
+
+.resume-header__name {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.resume-header__title {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.resume-header__contact {
+    font-style: normal;
+    font-size: 14px;
+}
+
+.resume-header__contact p {
+    margin: 5px 0;
+}
+
+.resume-header__contact a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.resume-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.resume-photo {
+    flex-shrink: 0;
+}
+
+.resume-photo img {
+    width: 180px;
+    height: 220px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+.resume-main {
+    flex: 1;
+}
+
+.resume-section {
+    margin-bottom: 20px;
+}
+
+.resume-section__title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.resume-section__content {
+    line-height: 1.6;
+    color: #333;
+}
+
+.education-item,
+.experience-item {
+    margin-bottom: 15px;
+}
+
+.education-item__degree,
+.experience-item__job {
+    font-weight: bold;
+    color: #333;
+}
+
+.education-item__date,
+.experience-item__date {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.experience-item__achievements {
+    margin: 10px 0 10px 20px;
+}
+
+.experience-item__achievements li {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.experience-item__skills {
+    font-size: 14px;
+    color: #666;
+}
+
+.resume-section__links {
+    font-size: 14px;
+}
+
+.resume-section__links a {
+    color: #0066cc;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.resume-divider {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .resume-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resume-photo img {
+        width: 150px;
+        height: 180px;
+    }
+}
